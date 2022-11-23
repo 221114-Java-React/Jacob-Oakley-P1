@@ -1,0 +1,17 @@
+package com.revature.p1.handlers;
+
+import com.revature.p1.services.UserService;
+import io.javalin.http.Context;
+
+public class UserHandler {
+    private final UserService userService;
+
+    public UserHandler(UserService userService) {
+        this.userService = userService;
+    }
+
+
+    public void signup(Context c){
+
+    }
+}
