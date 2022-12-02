@@ -4,7 +4,7 @@ import java.math.BigDecimal;
 import java.sql.Timestamp;
 import java.util.Arrays;
 
-public class Reimbursements {
+public class Tickets {
     private BigDecimal amount;
     private Timestamp submitted;
     private Timestamp resolved;
@@ -15,11 +15,11 @@ public class Reimbursements {
     private String status_id;
     private String type_id;
 
-    public Reimbursements(){
+    public Tickets(){
         super();
     }
 
-    public Reimbursements(BigDecimal amount, Timestamp submitted, Timestamp resolved, String description, byte[] receipt, String payment_id, String resolver_id, String status_id, String type_id) {
+    public Tickets(BigDecimal amount, Timestamp submitted, Timestamp resolved, String description, byte[] receipt, String payment_id, String resolver_id, String status_id, String type_id) {
         this.amount = amount;
         this.submitted = submitted;
         this.resolved = resolved;
