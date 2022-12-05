@@ -1,6 +1,5 @@
 package com.revature.p1.daos;
 
-import com.revature.p1.models.Reimbursements;
 import com.revature.p1.models.UserRoles;
 
 import java.util.List;

@@ -2,6 +2,7 @@ package com.revature.p1.handlers;
 
 import com.fasterxml.jackson.databind.ObjectMapper;
 import com.revature.p1.custom_exceptions.InvalidAuthException;
+import com.revature.p1.custom_exceptions.InvalidUserException;
 import com.revature.p1.dtos.Principal;
 import com.revature.p1.dtos.requests.NewLoginRequest;
 import com.revature.p1.models.User;
@@ -31,6 +32,9 @@ public class AuthHandler {
         logger.info("Attempting to login...");
         try {
            Principal principal = userService.login(req);
+           if(!userService.isUserActive(principal.getUser_id())){ throw new InvalidAuthException("Your account must be activated before you may log in.");
+           }
+
            String token = tokenService.generateToken(principal);
            c.res.setHeader("authorization", token);
            c.json(principal);

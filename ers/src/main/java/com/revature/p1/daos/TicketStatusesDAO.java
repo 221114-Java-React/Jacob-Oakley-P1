@@ -1,34 +1,34 @@
 package com.revature.p1.daos;
 
-import com.revature.p1.models.ReimbursementStatuses;
+import com.revature.p1.models.TicketStatuses;
 
 
 import java.util.List;
 
-public class ReimbursementStatusesDAO implements CrudDAO<ReimbursementStatuses> {
+public class TicketStatusesDAO implements CrudDAO<TicketStatuses> {
 
     @Override
-    public void save(ReimbursementStatuses obj) {
+    public void save(TicketStatuses obj) {
 
     }
 
     @Override
-    public void delete(ReimbursementStatuses obj) {
+    public void delete(TicketStatuses obj) {
 
     }
 
     @Override
-    public void update(ReimbursementStatuses obj) {
+    public void update(TicketStatuses obj) {
 
     }
 
     @Override
-    public List<ReimbursementStatuses> findAll() {
+    public List<TicketStatuses> findAll() {
         return null;
     }
 
     @Override
-    public ReimbursementStatuses findById() {
+    public TicketStatuses findById() {
         return null;
     }
 }

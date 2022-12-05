@@ -1,36 +1,35 @@
 package com.revature.p1.daos;
 
-import com.revature.p1.models.ReimbursementTypes;
-import com.revature.p1.models.Reimbursements;
+import com.revature.p1.models.TicketTypes;
 
 import java.util.List;
 
-public class ReimbursementTypesDAO implements CrudDAO<ReimbursementTypes>{
+public class TicketTypesDAO implements CrudDAO<TicketTypes>{
 
 
 
     @Override
-    public void save(ReimbursementTypes obj) {
+    public void save(TicketTypes obj) {
 
     }
 
     @Override
-    public void delete(ReimbursementTypes obj) {
+    public void delete(TicketTypes obj) {
 
     }
 
     @Override
-    public void update(ReimbursementTypes obj) {
+    public void update(TicketTypes obj) {
 
     }
 
     @Override
-    public List<ReimbursementTypes> findAll() {
+    public List<TicketTypes> findAll() {
         return null;
     }
 
     @Override
-    public ReimbursementTypes findById() {
+    public TicketTypes findById() {
         return null;
     }
 }

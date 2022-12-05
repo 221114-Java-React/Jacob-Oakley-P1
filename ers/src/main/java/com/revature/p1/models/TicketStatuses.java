@@ -1,14 +1,14 @@
 package com.revature.p1.models;
 
-public class ReimbursementStatuses {
+public class TicketStatuses {
     private String status_id;
     private String status;
 
-    public ReimbursementStatuses() {
+    public TicketStatuses() {
         super();
     }
 
-    public ReimbursementStatuses(String status_id, String status) {
+    public TicketStatuses(String status_id, String status) {
         this.status_id = status_id;
         this.status = status;
     }
